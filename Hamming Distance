@@ -1,0 +1,10 @@
+int func(int x , int y)
+{
+  int ans = x ^ y , cnt = 0;
+  while(ans)
+  {
+    if((ans%2) & 1) cnt++;
+    ans = ans/2;
+  }
+  return cnt;
+}
